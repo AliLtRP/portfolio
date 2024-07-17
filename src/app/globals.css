@@ -2,32 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body { 
+  background-color: #11071F;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.grad {
+  background: rgb(118,60,172);
+  background: radial-gradient(circle, rgba(118,60,172,1) 0%, rgba(50,15,133,1) 100%);
+  border-radius: 100%;
+  opacity: 0.3;
+  filter: blur(50px);
+  position: relative;
+  z-index: 0;
+}
+
+.img-grad {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 18%, rgba(67,67,67,1) 100%);
+  border-radius: 100%;
+  width: 258px;
+  height: 259px;
+  filter: blur(30px);
+}
+
+.work-grad {
+  background: rgb(118,60,172);
+  background: radial-gradient(circle, rgba(118,60,172,1) 0%, rgba(50,15,133,1) 100%);
+  filter: blur(50px);
+  opacity: 0.3;
+  border-radius: 100%;
+}
+
+.work-div-grad {
+  background: rgb(19,4,40);
+background: radial-gradient(circle, rgba(19,4,40,1) 7%, rgba(37,16,67,1) 34%, rgba(56,18,109,1) 57%, rgba(38,16,69,1) 85%, rgba(25,6,52,1) 100%);
+}
+
+.skills-circle-grad {
+background: rgb(48,16,128);
+background: linear-gradient(90deg, rgba(48,16,128,0.5961574773413898) 0%, rgba(120,64,173,0.36) 100%);
+border-radius: 100%;
+z-index: 10;
+}
+
+.skills-grad {
+  background: rgb(118,60,172);
+background: linear-gradient(90deg, rgba(118,60,172,1) 0%, rgba(50,15,133,0) 100%);
+border-radius: 100%;
+z-index: 0;
+filter: blur(15px);
+opacity: 0.6;
+}
+
+.skills-rounded {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #763CAC;
+  border-top-left-radius: 147px;
+  border-top-right-radius: 147px; 
+  width: 295px;
+  height: 147px; 
+}
+
+.glass {
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  background-color: transparent !important;
 }
