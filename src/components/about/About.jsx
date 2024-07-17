@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import React from "react";
-import ReactTyped from "react-typed";
+import {ReactTyped} from "react-typed";
 
 const About = () => {
     return (

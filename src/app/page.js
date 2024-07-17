@@ -4,7 +4,7 @@ import Hero from "@/components/hero_section/Hero";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import Work from "@/components/work_section/Work";
-import {Preahvihear} from "next/font/google";
+import { Preahvihear } from "next/font/google";
 
 const font = Preahvihear({
   weight: "400",
@@ -13,7 +13,7 @@ const font = Preahvihear({
 
 export default function Home() {
   return (
-    <main className={font.className +  " w-full min-h-screen h-full bg-[#11071F]"}>
+    <main className={font.className + " w-full min-h-screen h-full bg-[#11071F]"}>
       <div className="flex px-16 h-full flex-col justify-center items-center">
         <Hero />
         <About />
