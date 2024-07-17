@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import About from "@/components/about/About";
 import Hero from "@/components/hero_section/Hero";
 import Projects from "@/components/projects/Projects";
